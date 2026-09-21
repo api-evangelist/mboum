@@ -1,0 +1,23 @@
+generated: '2026-09-21'
+method: searched
+source: https://docs.mboum.com/
+summary: >-
+  API key (Personal Access Token) authentication. Callers pass the key either as an
+  HTTP Authorization Bearer header ("Bearer {YOUR_AUTH_KEY}") or, for browser/GET use,
+  as an "apikey" query parameter. Tokens are generated and revoked from the account
+  dashboard under Personal Access Tokens. All data endpoints require authentication.
+docs: https://docs.mboum.com/
+schemes:
+- type: http
+  scheme: bearer
+  name: Authorization
+  location: header
+  description: >-
+    Authorization: Bearer {YOUR_AUTH_KEY}. Personal Access Token issued from the Mboum
+    account dashboard (Account -> Personal Access Tokens).
+- type: apiKey
+  name: apikey
+  location: query
+  description: >-
+    apikey={YOUR_AUTH_KEY} query parameter, offered for browser and simple GET usage
+    as an alternative to the Authorization header.

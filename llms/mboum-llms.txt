@@ -1,0 +1,89 @@
+# Mboum
+
+> Mboum is a REST/JSON stock and options market-data API. It provides real-time and
+> historical quotes, options chains, unusual options activity, technical indicators,
+> stock financials and fundamentals, analyst ratings and price targets, SEC filings,
+> insider trades, institutional holdings, calendar events (earnings, dividends, IPOs,
+> splits, economic events), market screeners, movers, news and crypto data. Data is
+> licensed from multiple market-data providers and served from AWS.
+
+Base URL: https://api.mboum.com
+Authentication: API key (Personal Access Token) sent as `Authorization: Bearer {KEY}` header or `apikey` query parameter. All endpoints require an active subscription.
+Rate limit: 15 requests/second (HTTP 429 on exhaustion); monthly request quota set by plan.
+Versioning: path-based, /v1, /v2 and /v3 served in parallel.
+
+## Documentation
+- [API Documentation](https://docs.mboum.com/): Full endpoint reference with per-endpoint parameters and code examples.
+- [API overview](https://mboum.com/pages/api): Product overview of the Mboum data API.
+- [Pricing](https://mboum.com/pages/pricing): Subscription tiers and monthly request quotas.
+- [FAQ](https://mboum.com/pages/faq): Common questions about data sources, scalability and billing.
+- [Blog](https://mboum.com/blogs): Tutorials and how-to guides for using the API.
+
+## General
+- GET https://api.mboum.com/v1/markets/search: Search tickers (stocks, ETFs, mutual funds, crypto).
+- GET https://api.mboum.com/v2/markets/search: Search tickers (newer version).
+- GET https://api.mboum.com/v1/markets/movers: Market movers.
+- GET https://api.mboum.com/v2/markets/movers: Market movers (newer version).
+- GET https://api.mboum.com/v2/markets/tickers: Ticker list.
+- GET https://api.mboum.com/v2/markets/market-info: General market information.
+- GET https://api.mboum.com/v1/markets/screener: Stock screener.
+- GET https://api.mboum.com/v2/markets/screener: Stock screener (newer version).
+- GET https://api.mboum.com/v1/markets/insider-trades: Insider trades.
+- GET https://api.mboum.com/v1/markets/news: Market news.
+- GET https://api.mboum.com/v2/markets/news: Market news (newer version).
+
+## Stocks
+- GET https://api.mboum.com/v1/markets/quote: Real-time quote.
+- GET https://api.mboum.com/v1/markets/stock/quotes: Batch quotes.
+- GET https://api.mboum.com/v1/markets/stock/history: Historical prices.
+- GET https://api.mboum.com/v2/markets/stock/history: Historical prices (newer version).
+- GET https://api.mboum.com/v2/markets/stock/historical: Historical data (v2).
+- GET https://api.mboum.com/v3/markets/historical: Historical data (v3).
+- GET https://api.mboum.com/v1/markets/stock/modules: Stock modules (summary data).
+- GET https://api.mboum.com/v1/markets/stock/analyst-ratings: Analyst ratings.
+- GET https://api.mboum.com/v2/markets/stock/price-targets: Analyst price targets.
+- GET https://api.mboum.com/v2/markets/stock/ticker-summary: Ticker summary.
+- GET https://api.mboum.com/v2/markets/stock/financials: Financial statements.
+- GET https://api.mboum.com/v2/markets/stock/revenue: Revenue data.
+- GET https://api.mboum.com/v2/markets/stock/short-interest: Short interest.
+- GET https://api.mboum.com/v2/markets/stock/institutional-holdings: Institutional holdings.
+- GET https://api.mboum.com/v2/markets/stock/sec-filings: Real-time SEC filings.
+
+## Options
+- GET https://api.mboum.com/v1/markets/options: Options chain.
+- GET https://api.mboum.com/v2/markets/options: Options chain (v2).
+- GET https://api.mboum.com/v3/markets/options: Options chain (v3).
+- GET https://api.mboum.com/v1/markets/options/unusual-options-activity: Unusual options activity.
+- GET https://api.mboum.com/v1/markets/options/iv-rank-percentile: IV rank / percentile.
+- GET https://api.mboum.com/v1/markets/options/iv-change: IV change.
+- GET https://api.mboum.com/v1/markets/options/most-active: Most active options.
+- GET https://api.mboum.com/v1/markets/options/highest-iv: Highest implied volatility.
+- GET https://api.mboum.com/v1/markets/options/options-flow: Options flow.
+
+## Calendar Events
+- GET https://api.mboum.com/v1/markets/calendar/earnings: Earnings calendar.
+- GET https://api.mboum.com/v2/markets/calendar/earnings: Earnings calendar (newer version).
+- GET https://api.mboum.com/v1/markets/calendar/dividends: Dividends calendar.
+- GET https://api.mboum.com/v2/markets/calendar/dividends: Dividends calendar (newer version).
+- GET https://api.mboum.com/v1/markets/calendar/economic_events: Economic events.
+- GET https://api.mboum.com/v1/markets/calendar/ipo: IPO calendar.
+- GET https://api.mboum.com/v1/markets/calendar/public_offerings: Public offerings.
+- GET https://api.mboum.com/v1/markets/calendar/stock-splits: Stock splits.
+
+## Technical Indicators
+- GET https://api.mboum.com/v1/markets/indicators/sma: Simple moving average.
+- GET https://api.mboum.com/v1/markets/indicators/ema: Exponential moving average.
+- GET https://api.mboum.com/v1/markets/indicators/rsi: Relative strength index.
+- GET https://api.mboum.com/v1/markets/indicators/macd: MACD.
+- GET https://api.mboum.com/v1/markets/indicators/cci: Commodity channel index.
+- GET https://api.mboum.com/v1/markets/indicators/adx: Average directional index.
+- GET https://api.mboum.com/v1/markets/indicators/stoch: Stochastic oscillator.
+- GET https://api.mboum.com/v1/markets/indicators/adosc: Chaikin A/D oscillator.
+- GET https://api.mboum.com/v1/markets/indicators/ad: Chaikin A/D line.
+
+## Crypto
+- GET https://api.mboum.com/v1/crypto/profile: Crypto profile.
+- GET https://api.mboum.com/v1/crypto/holders: Crypto holders.
+- GET https://api.mboum.com/v1/crypto/quotes: Crypto quotes.
+- GET https://api.mboum.com/v1/crypto/coins: Coin list.
+- GET https://api.mboum.com/v1/crypto/modules: Crypto modules.

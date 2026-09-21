@@ -1,0 +1,28 @@
+generated: '2026-09-21'
+method: probed
+source: https://docs.mboum.com/
+envelope: >-
+  Errors return a JSON object with a boolean "success" field (false on error) and a
+  human-readable "message" string. The API does not use RFC 9457 problem+json.
+format: custom-json
+problems:
+- status: 403
+  title: No active subscription / unauthorized
+  type: null
+  description: >-
+    Returned when the request has no valid subscription-backed API key (missing or
+    invalid Bearer token / apikey). Observed body:
+    {"success":false,"message":"You do not have an active subscription. Please subscribe
+    here: https://mboum.com/user/subscriptions/pricing"}
+- status: 404
+  title: Resource Not Found
+  type: null
+  description: >-
+    Unknown route or resource. Observed body: {"success":false,"message":"Resource Not
+    Found."}
+- status: 429
+  title: Too Many Requests
+  type: null
+  description: >-
+    Rate limit exceeded (documented limit of 15 requests per second). The docs recommend
+    implementing a retry mechanism.

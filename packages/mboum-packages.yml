@@ -1,0 +1,25 @@
+generated: '2026-09-21'
+method: searched
+source: https://registry.npmjs.org/-/v1/search?text=mboum
+note: >-
+  Mboum publishes no first-party client SDK. Its documentation only shows raw HTTP
+  examples (Python requests, PHP Guzzle, JavaScript fetch/axios). No package named
+  "mboum" or "mboum-api" exists on npm or PyPI. Two related third-party packages were
+  found on npm and are recorded below as community/unofficial (official: false): a
+  Pipedream component set and an AWS-Amplify-generated helper library of unclear
+  ownership. Both versions/dates are read from the npm registry metadata endpoint.
+packages:
+- name: '@pipedream/mboum'
+  registry: npm
+  url: https://www.npmjs.com/package/@pipedream/mboum
+  language: javascript
+  official: false
+  version: 0.1.1
+  published: '2025-08-25'
+- name: mboummarketdatalib
+  registry: npm
+  url: https://www.npmjs.com/package/mboummarketdatalib
+  language: javascript
+  official: false
+  version: 12.0.0
+  published: '2024-01-01'

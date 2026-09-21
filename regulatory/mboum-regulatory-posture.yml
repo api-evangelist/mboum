@@ -1,0 +1,13 @@
+generated: '2026-09-21'
+method: none
+source: https://mboum.com/pages/privacy-policy
+note: >-
+  Checked the harvested artifacts, conventional legal/compliance paths, and the docs and
+  store site. Mboum publishes a general Privacy Policy (with GDPR/CCPA rights, retention
+  and marketing opt-out sections) and Terms and Conditions, but none of the canonical
+  horizontal regulatory signals were found with substance: no subprocessor list, no DPA
+  page, no data-residency statement, no accessibility conformance report/VPAT, no SBOM,
+  no published Global Privacy Control honoring statement, no AI transparency notice, and
+  no dedicated data-subject-request portal beyond the rights described in the policy. A
+  general privacy policy alone does not meet the substance bar for these signals.
+signals: {}

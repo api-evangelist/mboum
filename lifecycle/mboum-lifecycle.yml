@@ -1,0 +1,17 @@
+generated: '2026-09-21'
+method: searched
+source: https://docs.mboum.com/
+versioning: >-
+  Path-based major versions (/v1, /v2, /v3) served in parallel. The documentation marks
+  endpoints as new!, updated or hot! and links from an older endpoint to its newer
+  version, but publishes no formal version-support or version-numbering policy.
+deprecation: >-
+  No published deprecation or sunset policy. Older endpoints (e.g. /v1 variants) remain
+  available with a docs note pointing to a newer version; no Deprecation or Sunset
+  (RFC 8594) response headers are documented and no end-of-life dates are stated.
+status_page: null
+sla: >-
+  No formal SLA published. The pricing FAQ states the API runs on AWS, is monitored 24/7
+  by the technical team, and claims "nearly 100%" uptime over the trailing 365 days, but
+  no contractual uptime guarantee or credit terms are given. No dedicated status page
+  (status.mboum.com did not resolve).

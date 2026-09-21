@@ -1,0 +1,34 @@
+generated: '2026-09-21'
+method: searched
+source: https://docs.mboum.com/
+authentication: >-
+  API key via Authorization Bearer header or apikey query parameter (see
+  authentication/mboum-authentication.yml).
+versioning: >-
+  Path-based versioning. Endpoints are namespaced under /v1, /v2 and /v3 (e.g.
+  /v1/markets/quote, /v2/markets/stock/financials, /v3/markets/options). Newer versions
+  are published alongside older ones; the docs flag endpoints as new!, updated or hot!
+  and cross-link a "newer version of this endpoint" where one exists. No dated changelog
+  or deprecation/sunset policy is published.
+pagination: >-
+  Not documented as a cross-cutting convention; list endpoints are driven by
+  per-endpoint query parameters rather than a uniform cursor/offset scheme.
+error_envelope: >-
+  Custom JSON envelope. Error responses return a JSON object with a boolean "success"
+  field and a human-readable "message" string (observed: 404 ->
+  {"success":false,"message":"Resource Not Found."}). See errors/mboum-problem-types.yml.
+rate_limit_signaling: >-
+  Global limit of 15 requests/second; HTTP 429 Too Many Requests on exhaustion. No
+  RateLimit-* or Retry-After response headers documented. See
+  rate-limits/mboum-rate-limits.yml.
+idempotency:
+  coverage: na
+  mechanism: null
+  header: null
+  retention: null
+  docs: null
+reversibility:
+  applicable: false
+  note: >-
+    Read-only market-data API. All documented endpoints are HTTP GET data reads with no
+    write, mutation, or state-changing operations, so reversibility does not apply.

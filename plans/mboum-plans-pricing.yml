@@ -1,0 +1,95 @@
+name: Mboum Stock & Options Data API
+generated: '2026-09-21'
+method: searched
+source: https://mboum.com/pages/pricing
+audience: developer-api
+pricing_basis: tiered-subscription
+published: true
+delivery:
+  delivery: managed
+plan_count: 4
+note: >-
+  Four public monthly subscription tiers priced by monthly API request quota; every tier
+  includes the full endpoint surface (stock, options, calendar, indicators, historical,
+  financials, screeners, insider trades, real-time SEC filings) and commercial use.
+  Annual billing is advertised as ~20% cheaper (the pricing page shows a reduced
+  per-month-equivalent under the Yearly toggle). Custom / high-volume plans available on
+  request via the contact form. Payment via credit card (Visa, MasterCard, Discover,
+  American Express); enterprise customers may request annual bank transfer.
+plans:
+- name: Investor
+  price: 9.95
+  price_text: $9.95 USD / month
+  currency: USD
+  billing_period: monthly
+  annual_price_text: $8.00 USD / year
+  features:
+  - Stock Endpoints
+  - Options Endpoints
+  - Calendar Events
+  - Technical Indicators
+  - Historical Data
+  - Stock Financial Data
+  - Stock Screeners
+  - Insider Traders
+  - Real-time Sec Filings
+  - Commercial Use
+  limits:
+  - 10,000 Req / Month
+- name: Business
+  price: 34.95
+  price_text: $34.95 USD / month
+  currency: USD
+  billing_period: monthly
+  annual_price_text: $29.00 USD / year
+  features:
+  - Stock Endpoints
+  - Options Endpoints
+  - Calendar Events
+  - Technical Indicators
+  - Historical Data
+  - Stock Financial Data
+  - Stock Screeners
+  - Insider Traders
+  - Real-time Sec Filings
+  - Commercial Use
+  limits:
+  - 50,000 Req / Month
+- name: Developer
+  price: 179.95
+  price_text: $179.95 USD / month
+  currency: USD
+  billing_period: monthly
+  annual_price_text: $144.00 USD / year
+  features:
+  - Stock Endpoints
+  - Options Endpoints
+  - Calendar Events
+  - Technical Indicators
+  - Historical Data
+  - Stock Financial Data
+  - Stock Screeners
+  - Insider Traders
+  - Real-time Sec Filings
+  - Commercial Use
+  limits:
+  - 250,000 Req / Month
+- name: Enterprise
+  price: 399.95
+  price_text: $399.95 USD / month
+  currency: USD
+  billing_period: monthly
+  annual_price_text: $320.00 USD / year
+  features:
+  - Stock Endpoints
+  - Options Endpoints
+  - Calendar Events
+  - Technical Indicators
+  - Historical Data
+  - Stock Financial Data
+  - Stock Screeners
+  - Insider Traders
+  - Real-time Sec Filings
+  - Commercial Use
+  limits:
+  - 2,500,000 Req / Month
