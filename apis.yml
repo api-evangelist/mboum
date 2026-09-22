@@ -12,6 +12,23 @@ modified: '2026-09-20'
 specificationVersion: '0.21'
 
 tags:
+- Stocks
+- Stock Market
+- Options
+- options market
+- Trading
+- Quotes
+- Market Data
+- Technical Indicators
+- SEC Filings
+- Insider Trading
+- IPO
+- Dividends
+- Earnings
+- Historical Data
+- Screener
+- Crypto
+tags_raw:
 - stock
 - stock market
 - options
@@ -83,6 +100,23 @@ apis:
   humanURL: https://mboum.com/pages/api
   baseURL: https://api.mboum.com
   tags:
+  - Stocks
+  - Stock Market
+  - Options
+  - options market
+  - Trading
+  - Quotes
+  - Market Data
+  - Technical Indicators
+  - SEC Filings
+  - Insider Trading
+  - IPO
+  - Dividends
+  - Earnings
+  - Historical Data
+  - Screener
+  - Crypto
+  tags_raw:
   - stock
   - stock market
   - options
