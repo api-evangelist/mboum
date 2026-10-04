@@ -1,0 +1,14 @@
+{
+  "repo": "mboum",
+  "feeds": [
+    {
+      "source": "https://mboum.com/login",
+      "feed_url": "https://mboum.com/login",
+      "title": "",
+      "saved": 0,
+      "method": "none"
+    }
+  ],
+  "post_count": 0,
+  "fetched": "2026-10-03T12:30:02Z"
+}
